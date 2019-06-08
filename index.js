@@ -23,16 +23,16 @@ function appendDriver(name) {
 }
 
 function prependDriver(name) {
-  let res = drivers
+  let res = [...drivers]
   return res.unshift(name)
 }
 
 function removeLastDriver() {
-  let res = drivers
+  let res = [...drivers]
   return res.pop()
 }
 
 function removeFirstDriver() {
-  let res = drivers
+  let res = [...drivers]
   return res.shift()
 }
