@@ -5,29 +5,33 @@ function destructivelyAppendDriver(name) {
 }
 
 function destructivelyPrependDriver(name) {
-
+  drivers.unshift(name)
 }
 
 function destructivelyRemoveLastDriver() {
-
+  drivers.pop()
 }
 
 function destructivelyRemoveFirstDriver() {
-
+  drivers.shift()
 }
 
 function appendDriver(name) {
-
+  let res = drivers
+  return res.push(name)
 }
 
 function prependDriver(name) {
-
+  let res = drivers
+  return res.unshift(name)
 }
 
 function removeLastDriver() {
-
+  let res = drivers
+  return res.pop()
 }
 
 function removeFirstDriver() {
-  
+  let res = drivers
+  return res.shift()
 }
